@@ -1,0 +1,72 @@
+<!-- invoice -->
+<div class="invoice">
+    <div class="container">
+        <div class="brand-section">
+            <div class="row">
+                <div class="col-4">
+                    <h1 class="text-white">Your Invoice</h1>
+                </div>
+                <div class="col-8">
+                    <div class="company-details">
+                        <p class="text-white">{{site}}</p>
+                        <p class="text-white">{{address}}</p>
+                        <p class="text-white">{{contact}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body-section">
+            <div class="row">
+                <div class="col-6 ">
+                    <h2 class="heading">Invoice No : {{invoice}}</h2>
+                    <p class="sub-heading">Transection Id: {{transection_id}}</p>
+                    <p class="sub-heading">Order Date: {{date}}</p>
+                    <p class="sub-heading">Email Address: {{customer_email}}</p>
+                </div>
+                <div class="col-6">
+                    <p class="sub-heading">Full Name: {{full_name}}</p>
+                    <p class="sub-heading">Address: {{address}}</p>
+                    <p class="sub-heading">Phone Number: {{number}}</p>
+                    <p class="sub-heading">City,State,Zipcode: {{city}},{{state}},{{zipcode}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="body-section">
+            <h3 class="heading">Ordered Items</h3>
+            <br>
+            <table class="table-bordered">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th class="w-20">Price</th>
+                        <th class="w-20">Quantity</th>
+                        <th class="w-20">Grandtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Membership</td>
+                        <td>{{price}}</td>
+                        <td>1</td>
+                        <td>{{price}}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-right">Discount</td>
+                        <td> {{discount}}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-right">Amount Due</td>
+                        <td>{{amount_due}}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-right">Grand Total</td>
+                        <td>{{grand_total}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <h3 class="heading">Payment Status: Paid</h3>
+            <h3 class="heading">Payment Mode: {{payment_gateway}}</h3>
+        </div>
+    </div>
+</div>
